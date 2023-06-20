@@ -1,0 +1,23 @@
+<div class="container">
+  <article>
+    <h3>Interpolação</h3>
+    <p>String reinderizada com interpolação {{ url }}</p>
+    <p>O resultado de 1 + 1 é {{ 1 + 1 }}</p>
+    <p>O resultado de 1 + 1 não é {{ 1 + 1 + getValor() }}</p>
+    <button (click)="trocarVariavel()">
+      Clicar para Inverter {{ curtirCurso }}
+    </button>
+  </article>
+<div>
+    <h3>Property Binding</h3>
+    <!-- Saida da imagem por interpolação -->
+    <img src=" {{ urlImage }}">
+
+    <!-- Saida da imagem por Property Binding -->
+    <img [src]="urlImage">
+</div>
+
+<!-- O property binding é o valor do elemento para o template -->
+
+
+</div>
